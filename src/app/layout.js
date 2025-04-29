@@ -9,6 +9,7 @@ import {
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import ModalHeader from "@/components/ModalHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,9 +41,12 @@ export default function RootLayout({ children }) {
               <SignUpButton />
             </SignedOut>
             <Header />
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
+            <div className="flex items-center gap-2">
+              <ModalHeader />
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </div>
           </header>
           {children}
         </body>

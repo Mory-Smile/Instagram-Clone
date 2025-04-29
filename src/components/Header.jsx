@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div className="">
-      <div className="flex justify-between items-center mx-auto min-w-dvh">
+      <div className="flex justify-between items-center mx-auto min-w-[55vw]">
         <Link href="/" className="hidden lg:inline-flex">
           <Image
             src="/Instagram_logo_black.webp"
@@ -26,7 +26,7 @@ export default function Header() {
         <input
           type="search"
           placeholder="search..."
-          className="bg-gray-50 border border-gray-300 rounded text-sm w-full py-2 px-4 max-w-[210px]"
+          className="bg-gray-50 border border-gray-300 rounded text-sm w-full py-2 px-4 max-w-[250px] ml-5"
         />
       </div>
     </div>
